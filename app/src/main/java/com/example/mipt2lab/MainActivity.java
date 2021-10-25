@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         if (spSelectedOption.equalsIgnoreCase( textString )){
             String text = edEnteredText.getText().toString();
             text = text.replace( "\n", " ");
+<<<<<<< HEAD
             String [] textArray = text.split("[\\.\\,\\ ]+");
             tvResult.setText( " " + textArray.length);
         }
@@ -57,4 +58,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+=======
+            String [] textArray = text.split("[., ]+");
+            tvResult.setText( " " + textArray.length);
+        }
+        else{
+        Toast.makeText( this, "Not implemented", Toast.LENGTH_SHORT ).show();
+    }
+}}
+>>>>>>> 9122928 (Initial commit)
 
